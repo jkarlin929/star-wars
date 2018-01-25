@@ -5,7 +5,9 @@ class Film extends React.Component{
     return(
       <div className='Film'>
         {this.props.title}
-        {this.props.chars}
+        This movie number {this.props.key}
+        {/* <Link to={`/:${this.props.key}`}> See Film's Characters </Link> */}
+        <br/>
       </div>
     )
   }

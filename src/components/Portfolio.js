@@ -21,15 +21,13 @@ class Portfolio extends Component {
        film: data.results,
      })
    })
-
   }
-
 
   passFilmData(film) {
     return film.map((film) => {
       return (
        <div key={film.id}>
-         {this.state.film ? <Film title={film.title} chars={film.chars} /> : <div>Fuck Starwars</div>}
+         {this.state.film ? <Film title={film.title} chars={film.characters} /> : <div>Boo Starwars</div>}
        </div>
     )})
   }

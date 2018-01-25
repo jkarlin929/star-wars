@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Character extends React.Component{
+class Characters extends React.Component{
   render(){
     return(
 
