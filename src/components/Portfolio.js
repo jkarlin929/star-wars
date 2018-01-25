@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Film from './components/Film';
 
 class Portfolio extends Component {
   constructor () {
