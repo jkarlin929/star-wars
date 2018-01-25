@@ -1,15 +1,46 @@
 .about{
   background-color: #43165c;
-  font-color: #ffffff;
-  font-family:
+  color: #ffffff;
+  font-family: "Arial", Helvetica, sans-seriff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact{
   background-color: #ffffff;
-  font-color: #333333;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footerabove, .footerbelow {
   background-color: #2a252d;
-  font-color: #ffffff;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navwrapper{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-bar{
+  display: flex;
+  align-items: center;
+}
+a {
+  display:block;
+  text-align: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
