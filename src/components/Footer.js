@@ -20,14 +20,15 @@ class Footer extends Component {
               3 years of competitive tennis
               15 years of competitive soccer </p>
           <h3>Languages Spoken</h3>
-            <p>French
-              Spanish
-              Tagalog </p>
+            <p>Binary
+              Ewokese
+              Galactic Standard
+              English </p>
         </div>
         <div className='contact'>
           <h2>Contact Me</h2>
           <p>Email to:
-          <a href="mailto:jkarlin929@gmail.com"</a>
+          <a href="mailto:jkarlin929@gmail.com"></a>
           </p>
         </div>
         <div className='footerabove'>
