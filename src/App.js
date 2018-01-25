@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Route, Switch, Redirect} from 'react-router-dom';
+
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/Navbar';
@@ -10,6 +12,7 @@ import Characters from './components/Characters';
 import {Route, Switch, Redirect} from 'react-router-dom';
 
 
+
 class App extends Component {
   render() {
     return (
@@ -17,7 +20,6 @@ class App extends Component {
 
         <NavBar />
         <Profile />
-
           <main>
       <Switch>
         <Route path='/:id' component={Characters} />
