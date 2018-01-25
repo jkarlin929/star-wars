@@ -28,16 +28,20 @@
   position: fixed;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
 }
 
 .nav-bar{
   display: flex;
+  width:100%;
   align-items: center;
 }
 a {
+  text-decoration: none;
   display:block;
   text-align: center;
   align-items: center;
+  width: 100%;
 }
 
 img {
