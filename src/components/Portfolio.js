@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import About from './About';
 import Film from './Film';
 import Profile from './Profile'
 
@@ -42,6 +42,7 @@ class Portfolio extends Component {
         <div>
           <Profile />
           {this.state.film ? <div>{this.passFilmData(this.state.film)}</div> : ''}
+          <About />
         </div>
       </div>
     )
