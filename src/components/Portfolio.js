@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Film from './Film';
+import Profile from './Profile'
 
 class Portfolio extends Component {
   constructor () {
@@ -29,7 +30,7 @@ class Portfolio extends Component {
       console.log(film.key, 'thisis the key');
       return (
        <div key={film.episode_id}>
-         {this.state.film ? <Film title={film.title} chars={film.characters} poop={film.episode_id}  /> : <div>Boo Starwars</div>}
+         {this.state.film ? <Film title={film.title} chars={film.characters} poop={film.episode_id} director={film.director} producer={film.producer} release_date={film.release_date} opening_crawl={film.opening_crawl}/> : <div>Boo Starwars</div>}
        </div>
     )})
   }
@@ -38,6 +39,7 @@ class Portfolio extends Component {
     return(
       <div className='Portfolio'>
         <div>
+          <Profile />
           {this.state.film ? <div>{this.passFilmData(this.state.film)}</div> : ''}
         </div>
       </div>
