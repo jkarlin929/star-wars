@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App">
 
         <NavBar />
-        <Profile />
+
           <main>
       <Switch>
         <Route path='/:id' component={Characters} />

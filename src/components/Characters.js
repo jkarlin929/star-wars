@@ -2,11 +2,15 @@ import React from 'react';
 
 class Characters extends React.Component{
   render(){
-      console.log('PROPS',this.props);
-      console.log('this is params', this.props.match.params);
+      const props = this.props.location.state;
     return(
-
-      <div> cam sucks {this.props.match.params.test} {this.props.test}</div>
+      <div>
+      <div className="title"> {props.title} </div>
+      <div className="director"> {props.director}</div>
+      <div className="producer"> {props.producer}</div>
+      <div className="release_date"> {props.release_date} </div>
+      <div className="opening_crawl"> {props.opening_crawl} </div>
+    </div>
     )
   }
 }
