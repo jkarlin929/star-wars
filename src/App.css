@@ -35,7 +35,32 @@
   display: flex;
   width:100%;
   align-items: center;
+  background-color: #000000;
+  color: #ffffff;
 }
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Film, a{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+a:link{
+  color: grey;
+}
+
+a:visited{
+  color: grey;
+}
+
 a {
   text-decoration: none;
   display:block;
@@ -48,3 +73,19 @@ img {
   width: 100%;
   height: auto;
 }
+
+
+.director, .producer, .release_date, .opening_crawl {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 35px;
+}
+
+.opening_crawl{
+  text-align: center;
+  margin: 0 3em 1em 3em;
+}
+

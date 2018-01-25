@@ -5,17 +5,16 @@ class Film extends React.Component{
   render(){
     const titletest = this.props.title;
     return(
-      <div className='Film'>
+      <div className='Film' id='Films'>
         {this.props.title}
-        This movie number {this.props.poop}
-        <Link to={{ pathname: `/:${this.props.poop}` ,
+        <Link to={{ pathname: `/:${this.props}` ,
         state: {
           title: this.props.title,
           director: this.props.director,
           producer: this.props.producer,
           release_date: this.props.release_date,
           opening_crawl: this.props.opening_crawl
-        } }}> See Film's Characters </Link>
+        } }}> See This Film's Details </Link>
         <br/>
       </div>
     )
