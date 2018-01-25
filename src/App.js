@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom';
-
 import logo from './logo.svg';
 import './App.css';
+import About from './components/About';
 import NavBar from './components/Navbar';
 import Profile from './components/Profile';
 import Film from './components/Film';
-import Footer from '/components/Footer';
+import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import Characters from './components/Characters';
 import {Route, Switch, Redirect} from 'react-router-dom';
@@ -27,9 +26,7 @@ class App extends Component {
       </Switch>
         </main>
 
-
-
-
+        <About />
 
         <Footer />
 
