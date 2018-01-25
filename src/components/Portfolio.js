@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Film from './Film';
 
 class Portfolio extends Component {
   constructor () {
@@ -20,11 +21,12 @@ class Portfolio extends Component {
        film: data.results,
      })
    })
+
   }
 
 
-  passFilmData(data) {
-    return data.results.map((film) => {
+  passFilmData(film) {
+    return film.map((film) => {
       return (
        <div key={film.id}>
          {this.state.film ? <Film title={film.title} chars={film.chars} /> : <div>Fuck Starwars</div>}
