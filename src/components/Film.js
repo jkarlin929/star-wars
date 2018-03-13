@@ -6,8 +6,9 @@ class Film extends React.Component{
     const titletest = this.props.title;
     return(
       <div className='Film' id='Films'>
+
         {this.props.title}
-        <Link to={{ pathname: `/:${this.props}` ,
+        <Link to={{ pathname: `/:${this.props.title}` ,
         state: {
           title: this.props.title,
           director: this.props.director,
